@@ -1,0 +1,9 @@
+bin/
+obj/
+properties/
+appsettings.Development.json
+appsettings.json
+libman.json
+MercuryMVC.csproj
+MercuryMVC.csproj.user
+Migrations/

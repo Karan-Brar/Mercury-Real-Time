@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-area container-fluid">
+    <div class="text-center container-fluid">
+        <h1 class="display-3">Login</h1>
+    </div>
+
+    <form>
+        <div class="mb-3 mt-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+        </div>
+        <div class="mb-4">
+            <label for="pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass">
+        </div>
+        <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </div>
+    </form>
+</div>
+<div class="container-fluid text-center mt-2">
+    <a asp-controller="Login" asp-action="RegisterForm">Not a User? Register here</a>
+</div>

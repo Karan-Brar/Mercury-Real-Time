@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.login-area, .register-area 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*    margin-top: 7em;*/
+}
+
+#messages-spinner
+{
+    display: none;
+}
+
+
+#username, #pass
+{
+    width: 20em;
+}
+
