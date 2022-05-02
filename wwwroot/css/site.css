@@ -26,7 +26,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*    margin-top: 7em;*/
 }
 
 #messages-spinner
@@ -40,3 +39,8 @@ body {
     width: 20em;
 }
 
+.register-area form div .alert-danger 
+{
+    font-size: 0.9em;
+    display: none;
+}

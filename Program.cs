@@ -39,5 +39,6 @@ app.MapControllerRoute(
     pattern: "{controller=ChatRoom}/{action=ChatRoom}/");
 
 app.MapHub<ChatHub>("/chatHub");
+app.MapHub<LoginHub>("/loginHub");
 
 app.Run();

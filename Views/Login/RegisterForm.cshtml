@@ -11,21 +11,30 @@
         <div class="mb-3 mt-3">
             <label for="username" class="form-label">Choose a Username</label>
             <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username">
+            <div class="alert alert-danger p-2 mt-2" id="takenError">
+                This Username is already taken.
+            </div>
         </div>
         <div class="mb-4">
             <label for="pass" class="form-label">Choose a Password</label>
             <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass">
         </div>
         <div class="mb-4">
-            <label for="pass" class="form-label">Confirm your password</label>
-            <input type="password" class="form-control" id="pass" placeholder="Re-enter Password" name="pass">
+            <label for="confirmPass" class="form-label">Confirm your password</label>
+            <input type="password" class="form-control" id="confirmPass" placeholder="Re-enter Password" name="confirmPass">
+            <div class="alert alert-danger p-2 mt-2" id="matchError">
+                Passwords do not match.
+            </div>
         </div>
         <div class="mb-3 text-center">
-            <button type="submit" class="btn btn-primary">Register</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" class="btn btn-primary" id="registerBtn">Register</button>
+            <button type="reset" class="btn btn-danger" id="resetBtn">Reset</button>
         </div>
     </form>
 </div>
 <div class="container-fluid text-center mt-2">
     <a asp-controller="Login" asp-action="LoginForm">Already a User? Sign-in</a>
 </div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/register.js"></script>
